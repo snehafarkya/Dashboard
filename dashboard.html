@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato&family=Orbitron&family=Playfair+Display&family=Poppins:wght@200;400&display=swap');
+    </style>
+</head>
+<body class="relative  overflow-hidden max-h-screen">
+  <style>
+    *{
+      font-family: 'Inter', sans-serif;
+    }
+    ::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+}
+body{
+  background-color: #F8F9FC;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.15);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,.3);
+}
+.info{
+  border: 1px solid #E3E4E8;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+box-shadow: 0px 1px 2px 0px #0000000F;
+
+}
+  </style>
+  <header class="fixed right-0   left-60 bg-white  items-center pt-[14px] m-auto w-auto h-[56px] border-b">
+   <div class="flex justify-between items-start p-auto w-full pl-12">
+    <div class="font-bold text-xl pl-4">Home</div>
+    <div class="icons flex">
+      <img src="./dashboard assets/notification-icon.svg" alt="">
+      <img src="./dashboard assets/notification-icon (1).svg" alt="" class="pl-5">
+      <img src="./dashboard assets/profile-icon.svg" alt="" class="px-5 border-l border-[#E3E4E8] ml-5">
+
+    </div>
+   </div>
+  </header>
+
+  <aside class="fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-[280px]">
+    <div class="flex flex-col justify-between h-full">
+      <div class="flex-grow">
+        <div class="px-4 py-3 h-[56px] text-center border-b">
+          <h1 class="text-xl font-bold leading-none flex justify-around items-center gap-2"><img src="./Rectangle 3.svg" alt=""><span class="text-sm">Mothi Venkatesh</span> <img src="./Open.svg" class="ml-8 mt-1" alt=""></h1>
+        </div>
+        <div class="p-4">
+          <ul class="space-y-1">
+            <li>
+              <a href="javascript:void(0)" class="flex items-center bg-[#F0F6FF] rounded-md font-bold text-sm text-[#1A54F2] h-10 py-2 px-2">
+               <img src="./dashboard assets/Home.svg" class="mr-4" alt=""> Home
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex bg-white hover:bg-[#F0F6FF] rounded-md  text-sm text-[#1A1A1A] py-2 px-2">
+                <img src="./dashboard assets/Calendar Month.svg" class="mr-4" alt="">Bookings
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex bg-white hover:bg-[#F0F6FF] rounded-md  text-sm text-[#1A1A1A] py-2 px-2">
+                <img src="./dashboard assets/Clock.svg" class="mr-4" alt="">Availability
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex bg-white hover:bg-[#F0F6FF] rounded-md  text-sm text-[#1A1A1A] py-2 px-2">
+                <img src="./dashboard assets/Layer.svg" class="mr-4" alt="">Services
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex bg-white hover:bg-[#F0F6FF] rounded-md text-sm text-[#1A1A1A] py-2 px-2">
+                <img src="./dashboard assets/People.svg" class="mr-4" alt="">Customers
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex bg-white hover:bg-[#F0F6FF] rounded-md text-sm text-[#1A1A1A] py-2 px-2">
+                <img src="./dashboard assets/Apps.svg" class="mr-4" alt="">Integration
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex bg-white hover:bg-[#F0F6FF] rounded-md  text-sm text-[#1A1A1A] py-2 px-2">
+                <img src="./dashboard assets/Settings.svg" class="mr-4" alt="">Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="px-6 pb-8">
+         <span class="text-xs text-[#636779] ">Blog • Help Center • <br>
+          Feedback • Code of Conduct • <br>
+          Privacy • T&C • Twitter</span>
+          <p class="pt-4 text-[#636779] text-xs">© 2023 GoSchedule, Inc.</p>
+      </div>
+    </div>
+  </aside>
+
+  <main class="ml-60 mr-60   pt-16 max-h-screen overflow-hidden">
+    <div class=" py-4 ">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex justify-between border-[#FDE7AA] border-[1px] rounded-[8px] h-10 gap-60 text-xs bg-[#FFF8E6] px-4 py-3 w-4xl">
+          <p class="text-[#413001]">You're on the Premium plan. Your trial ends in 13 days. I'm ready to buy</p>
+          <p class="flex gap-1 items-center"><img src="./dashboard assets/Regular.svg" alt=""> Book a demo with us</p>
+        </div>
+
+        <div class="info flex justify-between items-start bg-white mt-3 px-4">
+          <div class="flex items-center  py-4">
+            <img src="" class="rounded-full h-16 px-4 py-4 w-16 bg-[#F7F7F8]" alt="">
+            <div class="block pl-4">
+            <p class="text-base font-bold text-[#1A1A1A]">Hi, Mothi Venkatesh</p>
+            <a class="inline-block text-[#1A54F2] text-sm text-medium" href=""> goschedule.io/mothivenkatesh </a>
+          </div>
+          </div>
+
+          <!-- button -->
+          <button class="bg-[#1A54F2] px-4 text-sm h-8 text-center border mt-4 flex gap-2 text-white items-center rounded-[6px]"><span><img src="./dashboard assets/share.svg" alt=""></span> Share</button>
+        </div>
+
+        <!-- card section -->
+        <div class=" info block bg-white mt-3 px-4">
+        <div class=" flex justify-between items-start bg-white ">
+          <div class="flex items-center  py-4">
+            <div class="image rounded-[8px]  bg-[#F7F7F8]  "></div>
+            <img src="./dashboard assets/Layer.svg" class="h-10 p-2 rounded-[8px]  w-10 bg-[#F7F7F8]" alt="">
+            <div class="block pl-4">
+            <p class="text-base font-bold text-[#1A1A1A]">Services</p>
+            <p class="inline-block text-[#51595D;] text-sm text-medium">2 total</p>
+          </div>
+          </div>
+
+          <!-- button -->
+          <div class="flex gap-2 mt-4">
+            <button class="px-4 text-sm h-8 text-center text-[#51595D] bg-[#FFFFFF] border-[#E3E4E8] border rounded-[6px] ">View: <span class="text-black">Booking Type</span></button>
+            <button class="px-4 text-sm h-8 text-center text-[#51595D] bg-[#FFFFFF] border-[#E3E4E8] border rounded-[6px] ">Assigned to: <span class="text-black">Me</span></button>
+            <button class="px-4 text-sm h-8 text-center text-[#51595D] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/Layer.svg" alt=""><span >Filter</span></button>
+            <button class="px-4 text-sm h-8 text-center text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/Layer.svg" alt=""><span >Add New</span></button>
+            
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="flex mb-4 gap-7 bg-white" >
+          <!-- card1 -->
+          <div class="card h-[200x] pt-5 px-4 w-[415px] border-[#E3E4E8] border rounded-[6px] border-2">
+            <div class="flex justify-between items-center">
+            <div class="card-header flex items-center  ">
+              <img src="./dashboard assets/Group 5681.svg" class="rounded-[8px] h-8  w-8 bg-[#F7F7F8]" alt="">
+              <div class="block pl-4">
+            <p class="text-base font-bold text-[#1A1A1A]">Gym demo session</p>
+            <p class="inline-block text-[#51595D;] text-sm text-medium">30 mins, One-on-One</p>
+          </div>
+        </div>
+        <img src="./dashboard assets/Filled.svg" alt="">
+            </div>
+            <div class="card-body mb-16 ">
+
+            </div>
+            <hr width="100%">
+            <div class="card-footer flex justify-between py-4">
+            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./Copy.svg" alt=""><span >Copy</span></button>
+            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/share.svg" alt="" ><span >Share</span></button>
+
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card h-[200x] pt-5 px-4 w-[415px] border-[#E3E4E8] border rounded-[6px] border-2">
+            <div class="flex justify-between items-center">
+            <div class="card-header flex items-center  ">
+              <img src="./dashboard assets/Group 5681.svg" class="rounded-[8px] h-8  w-8 bg-[#F7F7F8]" alt="">
+            <div class="block pl-4">
+            <p class="text-base font-semibold text-[#1A1A1A]">Gym demo session</p>
+            <p class="inline-block text-[#51595D;] text-sm text-medium">30 mins, One-on-One</p>
+          </div>
+        </div>
+            <img src="./dashboard assets/Filled.svg" alt="">
+            </div>
+            <div class="card-body mb-16 ">
+
+            </div>
+            <hr width="100%">
+            <div class="card-footer flex justify-between py-4">
+            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./Copy.svg" alt=""><span >Copy</span></button>
+            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/share.svg" alt=""><span >Share</span></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <aside class="fixed inset-y-0 right-0 bg-white shadow-md max-h-screen w-[280px] top-14">
+    <div class="flex flex-col justify-between h-full ">
+      <div class="flex-grow">
+      
+        <div class="p-4 ">
+          <div class="flex justify-between ">
+          Profile Completion 
+          <img src="./dashboard assets/Dismiss.svg" alt="">
+        </div>
+        <h3 class="font-bold block text-xl">75%</h3>
+        <div class="w-full mt-2 bg-[#F7F7F8] rounded-full h-1 mb-4 dark:bg-[#C5D9FB]">
+          <div class="bg-blue-600 h-1 rounded-full dark:bg-blue-500" style="width: 75%"></div>
+        </div>
+
+          <ul class="space-y-1 mt-2">
+            <li>
+              <a href="javascript:void(0)" class="flex items-center line-through  text-sm text-[#51595D] py-2">
+               <img src="./dashboard assets/CircleFilled.svg" class="mr-4" alt=""> Account Created
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center line-through  text-sm text-[#51595D] py-2 ">
+                <img src="./dashboard assets/CircleFilled.svg" class="mr-4" alt=""> Connect with your calendar
+               </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center  text-sm text-[#51595D] py-2">
+                <img src="./dashboard assets/Error Circle.svg" class="mr-4" alt="">Create your first service
+               </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center  text-sm text-[#51595D] py-2">
+                <img src="./dashboard assets/Error Circle.svg" class="mr-4" alt="">Connect with Stripe
+               </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center text-sm text-[#51595D] py-2">
+                <img src="./dashboard assets/Error Circle.svg" class="mr-4" alt="">Invite your teammates
+               </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="flex items-center  text-sm text-[#51595D] py-2">
+                <img src="./dashboard assets/Error Circle.svg" class="mr-4" alt="">Share your store
+               </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+</body>
+</html>

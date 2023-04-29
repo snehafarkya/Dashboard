@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato&family=Orbitron&family=Playfair+Display&family=Poppins:wght@200;400&display=swap');
+    *{
+      font-family: 'Inter', sans-serif;
+    }
+    </style>
+</head>
+<body>
+<!-- Modal toggle -->
+<button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  Contact
+</button>
+
+
+<!-- Main modal -->
+<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+    <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow ">
+          <!-- header -->
+          <div class="flex items-center justify-between px-8 p-4 border-b rounded-t border-[#B9BEC7]">
+            <h3 class="text-sm font-semibold text-[#00050D]">
+                Contact Support
+            </h3>
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- main body -->
+            <div class="px-6 py-6 lg:px-8 p-4 border-b rounded-t border-[#B9BEC7]">
+                <form class="space-y-6" action="#">
+                  <h2 class="text-sm font-semibold text-[#00050D]">Enter your query details below</h2>
+                    <div>
+                        <label for="email" class="block mb-2 text-xs  text-[#3F4959] ">What can we help you with?</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border text-[#A3AAB5] text-sm rounded-[4px] block w-full p-2.5  dark:border-[#B9BEC7]  " placeholder="Select a Catagory" required>
+                    </div>
+                    <div>
+                        <label for="password" class="block mb-2 text-xs text-[#3F4959] ">Subject line</label>
+                        <input type="text" name="text" id="password" placeholder="Type in a subject line" class="bg-gray-50 border  text-[#A3AAB5] text-sm rounded-[4px]  block w-full p-2.5 dark:border-[#B9BEC7] " required>
+                    </div>
+                    <div>
+                      <label class="block mb-2 text-xs  text-[#3F4959] ">Query Description</label>
+                      <textarea  name="email" id="email" class="bg-gray-50 border text-[#A3AAB5] text-sm rounded-[4px]  block w-full p-2.5 dark:border-[#B9BEC7]   " placeholder="Describe your query in detail" required></textarea>
+                  </div>
+                  <div>
+                    <!-- footer -->
+                  <div class="flex items-center justify-center w-full">
+                     <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-34 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 ">
+                     <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                      <p class="mb-2 text-sm text-[#8E96A3]"><span class="font-semibold">Drag and drop images here or click to upload</p>
+                      <p class="text-xs text-[#A3AAB5]">Maximum upload size : 5MB total</p>
+                     </div>
+                    <input id="dropzone-file" type="file" class="hidden" />
+                  </label>
+                  </div> 
+                  <div class="flex justify-between mt-4 content-end">
+                    <div class="flex gap-4">
+                      <img src="./dashboard assets/imgicon.svg" alt="">
+                      <h4 class="text-sm text-[#00050D]">img.jpg</h4>
+                    </div>
+                    <div class="items-end justify-items-end">
+                    <img src="./dashboard assets/delete.svg" alt="" class="place-items-end">
+                  </div>
+                  </div>
+                  </div>
+                   
+                    <div class="flex items-center justify-end p-6 space-x-2 border-t border-[#B9BEC7] rounded-b ">
+                      <button data-modal-hide="staticModal" type="button" class="text-[#00050D] bg-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center border-[#EBEDF0] border">Cancel</button>
+                      <button data-modal-hide="staticModal" type="button" class="text-white  bg-[#1A54F2;] focus:ring-4 focus:outline-none  rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 ">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+  
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato&family=Orbitron&family=Playfair+Display&family=Poppins:wght@200;400&display=swap');
+    </style>
+</head>
+<body class="mx-4 my-4">
+  <style>
+    .box{
+      box-shadow: 0px 1px 4px 2px rgba(26, 26, 26, 0.05);
+      border-radius: 4px;
+      box-shadow: 0px 1px 4px 2px #1A1A1A0D;
+
+    }
+    .imgbg{
+      background: linear-gradient(180deg, #E7EDFE 0%, #E7EDFE 55.21%, rgba(182, 197, 238, 0.55) 100%);
+
+    }
+    .profile{
+      border: 1px solid #EBEDF0;
+      box-shadow: 0px 1px 4px 2px rgba(26, 26, 26, 0.05);
+      border-radius: 4px;
+      box-shadow: 0px 1px 4px 2px #1A1A1A0D;
+
+    }
+  </style>
+<div class="box h-[368px] w-[400px] bg-white border border-[#EBEDF0]">
+<p class="h-8 w-full text-[#00050D] font-bold text-base my-3 pl-6 border-b ">Notification</p>
+<div class="flex items-center justify-center h-80 m-auto">
+<div class="flex justify-center flex-col items-center ">
+  <div class="imgbg h-30 w-30 rounded-full flex justify-center">
+    <img src="./dashboard assets/bell.svg" alt="" class="px-7 pt-[29px] pb-[25px]">
+  </div>
+
+<div class="msg block text-center mt-4">
+<p class="text-sm font-semibold text-[#00050D]">No Notification yet</p>
+<p class="text-xs text-[#3F4959]">We will notify you once something arrives</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- search button -->
+<div class="my-4 mx-4 flex gap-2 ">
+<div class="relative w-52">
+  <input type="search" id="search-dropdown" class="block px-2.5  h-8 items-center w-full z-20 text-sm text-[#A3A6B3] bg-white rounded-[4px]  border border-[#E3E4E8]" placeholder="search file name" required>
+  <button type="submit" class="absolute top-0 right-0 px-2.5 py-1.5 text-sm font-medium text-white flex justify-center items-center">
+      <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      <span class="sr-only">Search</span>
+  </button>
+</div>
+<button type="submit" class="mx-4 px-4 h-8 py-1.5 text-sm text-[#393F42] bg-white rounded-[4px]  border border-[#E3E4E8] font-medium flex justify-center items-center">Filter </button>
+
+<!-- dropdown -->
+
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" bg-white h-8 font-medium rounded-[4px] text-sm px-4 py-2.5 text-[#393F42] text-center inline-flex items-center  border-[#E3E4E8] border" type="button">Add from Gdrive <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+</div>
+
+
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 h-8 font-medium rounded-[4px] text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 border-[#1A54F2] border" type="button">Add from system <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+</div>
+</div>
+
+<!-- banner/blockquote -->
+<blockquote class="p-4 my-4 mx-4 py-[14px] border rounded-[4px] border-[#BFE8C2] bg-[#ECF8ED]">
+  <div class="flex justify-between">
+  <p class="text-sm  font-medium border-l-4 px-3  border-[#2D8033] leading-relaxed text-[#2D8033]">Your query has been sucessfully submitted. We will get back to you soon.</p>
+  <img src="./dashboard assets/Dismiss-Green.svg" alt="" class="">
+</div>
+</blockquote>
+
+<blockquote class="p-4 my-4 mx-4 py-[14px] border rounded-[4px] border-[#FDE7AA] bg-[#FEF8E6]">
+  <div class="flex justify-between">
+  <p class="text-sm  font-medium border-l-4 px-3  border-[#AA7D03] leading-relaxed text-[#785902]">Your query has been sucessfully submitted. We will get back to you soon.</p>
+  <img src="./dashboard assets/Dismiss-Yellow.svg" alt="" class="">
+</div>
+</blockquote>
+
+<blockquote class="p-4 my-4 mx-4 py-[14px] border rounded-[4px] border-[#FAADB4] bg-[#FEE7E9]">
+  <div class="flex justify-between">
+  <p class="text-sm  font-medium border-l-4 px-3  border-[#A40A18] leading-relaxed text-[#A40A18]">Your query has been sucessfully submitted. We will get back to you soon.</p>
+  <img src="./dashboard assets/Dismiss-Red.svg" alt="" class="">
+</div>
+</blockquote>
+
+<blockquote class="p-4 my-4 mx-4 h-auto w-[600px] py-3 border rounded-[4px] border-[#BFE8C2] bg-[#ECF8ED]">
+  <div class="flex justify-between">
+  <p class="text-sm flex items-center font-medium gap-2 leading-relaxed text-[#2D8033]"> <img src="./dashboard assets/CircleFilled.svg" alt=""> Message goes here </p>
+  <div class="flex gap-2">
+    <button class="h-8 justify-center flex bg-white w-24 items-center">Action</button>
+  <img src="./dashboard assets/Dismiss-Green.svg" alt="" class="">
+  </div>
+</div>
+</blockquote>
+
+<blockquote class="p-4 my-4 mx-4 py-3 w-[600px] border rounded-[4px] border-[#FDE7AA] bg-[#FEF8E6]">
+  <div class="flex justify-between">
+  <p class="text-sm  font-medium flex items-center gap-2 leading-relaxed text-[#785902]"> <img src="./dashboard assets/Warning.svg" alt=""> Message goes here</p>
+  <div class="flex gap-2">
+    <button class="h-8 justify-center flex bg-white w-24 items-center">Action</button>
+  <img src="./dashboard assets/Dismiss-Yellow.svg" alt="" class="">
+  </div>
+</div>
+</blockquote>
+
+<blockquote class="p-4 my-4 mx-4 py-3 w-[600px] border rounded-[4px] border-[#FAADB4] bg-[#FEE7E9]">
+  <div class="flex justify-between">
+  <p class="text-sm flex gap-2 items-center font-medium leading-relaxed text-[#A40A18]"><img src="./dashboard assets/Error Circle (1).svg" alt="">Message goes here</p>
+  <div class="flex gap-2">
+    <button class="h-8 justify-center flex bg-white w-24 items-center">Action</button>
+  <img src="./dashboard assets/Dismiss-Red.svg" alt="" class="">
+  </div>
+</div>
+</blockquote>
+
+<blockquote class="p-4 my-4 mx-4 py-3 w-[600px] border rounded-[4px] border-[#EBEDF0] bg-[#F5F6F7]">
+  <div class="flex justify-between">
+  <p class="text-sm  font-medium flex items-center gap-2 leading-relaxed text-[#151B28]"> <img src="./dashboard assets/Info (1).svg" alt=""> Message goes here</p>
+  <div class="flex gap-2">
+    <button class="h-8 justify-center flex bg-white w-24 items-center">Action</button>
+  <img src="./dashboard assets/Dismiss-Yellow.svg" alt="" class="">
+  </div>
+</div>
+</blockquote>
+<!-- breadcrumbs -->
+
+<nav class="flex" aria-label="Breadcrumb">
+  <ol class="inline-flex items-center space-x-1 md:space-x-3">
+    <li class="inline-flex items-center">
+      <a href="#" class="inline-flex items-center text-sm font-medium text-[#878B9C]">
+        My Sources
+      </a>
+    </li>
+    <li>
+      <div class="flex items-center">
+        <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        <a href="#" class="ml-1 text-sm font-medium text-[#1A54F2]">Amazon S3 files - Delhi</a>
+      </div>
+    </li> 
+  </ol>
+</nav>
+
+<!-- profile card -->
+<div class="flex justify-center my-4 ">
+
+  <div class="w-[280px] profile">
+      <div class="bg-white rounded-lg py-3">
+          <div class="photo-wrapper ">
+              <img class="w-10 h-10 rounded-full mx-auto" src="https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp" alt="John Doe">
+          </div>
+          <div class="p-2">
+              <h3 class="text-center text-xl text-gray-900 font-medium leading-8">John Doe</h3>
+              <div class="text-center text-gray-400 text-xs font-semibold border-b pb-7 border-[#EBEDF0] ">
+                  <p>john.doe.manager@recko.io</p>
+              </div>
+             <div class="flex h-9 px-4 items-center mb-2 mt-2 gap-2  ">
+              <div class="">
+              <img src="./dashboard assets/People.svg" alt="">
+            </div>
+              <div class="">
+              <p>Profile Settings</p>
+            </div>
+             </div>
+
+
+             <div class="border-t border-[#EBEDF0] ">
+              <p class="text-[#3F4959] text-xs px-4 pt-4">Switch Organisation</p>
+             </div>
+             <!-- reusing upper  -->
+             <div class="flex h-9 px-4 items-center mb-2 mt-2 gap-2 ">
+              <div class="">
+              <img src="./dashboard assets/case.svg" alt="">
+            </div>
+              <div class="">
+              <p>India</p>
+            </div>
+             </div>
+             <div class="flex h-9 px-4 items-center mb-2 mt-2 gap-2 ">
+              <div class="">
+              <img src="./dashboard assets/case.svg" alt="">
+            </div>
+              <div class="">
+              <p>Indonesia</p>
+            </div>
+             </div>
+             
+  
+          </div>
+          <div class="flex h-9 px-4 items-center mb-2 pt-4 gap-2  border-t  border-[#EBEDF0]">
+            <div class="">
+            <img src="./dashboard assets/People.svg" alt="">
+          </div>
+            <div class="">
+            <p>Profile Settings</p>
+          </div>
+           </div>
+           </div>
+           </div>
+      </div>
+  </div>
+  
+  </div>
+
+  
+</body>
+</html>

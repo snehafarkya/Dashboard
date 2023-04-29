@@ -10,7 +10,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato&family=Orbitron&family=Playfair+Display&family=Poppins:wght@200;400&display=swap');
     </style>
 </head>
-<body class="relative  overflow-hidden max-h-screen">
+<body class="relative  overflow-hidden max-h-screen flex justify-center">
   <style>
     *{
       font-family: 'Inter', sans-serif;
@@ -20,7 +20,7 @@
     height: .5rem;
 }
 body{
-  background-color: #F8F9FC;
+  background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -37,7 +37,9 @@ box-shadow: 0px 1px 2px 0px #0000000F;
 
 }
   </style>
-  <header class="fixed right-0   left-60 bg-white  items-center pt-[14px] m-auto w-auto h-[56px] border-b">
+
+  
+  <!-- <header class="fixed right-0   left-60 bg-white  items-center pt-[14px] m-auto w-auto h-[56px] border-b">
    <div class="flex justify-between items-start p-auto w-full pl-12">
     <div class="font-bold text-xl pl-4">Home</div>
     <div class="icons flex">
@@ -47,13 +49,14 @@ box-shadow: 0px 1px 2px 0px #0000000F;
 
     </div>
    </div>
-  </header>
-
-  <aside class="fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-[280px]">
+  </header> -->
+  <div class="flex justify-around ">
+    <div>
+  <aside class=" inset-y-0 left-0 bg-white shadow-md h-screen w-[280px]">
     <div class="flex flex-col justify-between h-full">
       <div class="flex-grow">
         <div class="px-4 py-3 h-[56px] text-center border-b">
-          <h1 class="text-xl font-bold leading-none flex justify-around items-center gap-2"><img src="./Rectangle 3.svg" alt=""><span class="text-sm">Mothi Venkatesh</span> <img src="./Open.svg" class="ml-8 mt-1" alt=""></h1>
+          <h1 class="text-xl font-bold leading-none flex justify-around items-center gap-2"><img src="./dashboard assets/Rectangle 3 (1).svg" alt=""><span class="text-sm text-left">Mothi Venkatesh<a href="" class="text-xs  text-[#1A54F2] block font-normal">goschedule.io/mothivenkatesh</span> <img src="./dashboard assets/Open.svg" class="ml-4 mt-1" alt=""></h1>
         </div>
         <div class="p-4">
           <ul class="space-y-1">
@@ -103,10 +106,11 @@ box-shadow: 0px 1px 2px 0px #0000000F;
       </div>
     </div>
   </aside>
-
-  <main class="ml-60 mr-60   pt-16 max-h-screen overflow-hidden">
-    <div class=" py-4 ">
-      <div class="max-w-4xl mx-auto">
+</div>
+  <main class=" max-h-screen overflow-hidden">
+    <div class="font-bold text-xl pl-4 bg-white  items-center pt-[14px] m-auto w-full h-[56px] border-b">Home</div>
+    <div class=" px-10 py-4 ">
+      <div class="max-w-4xl items-center mx-auto">
         <div class="flex justify-between border-[#FDE7AA] border-[1px] rounded-[8px] h-10 gap-60 text-xs bg-[#FFF8E6] px-4 py-3 w-4xl">
           <p class="text-[#413001]">You're on the Premium plan. Your trial ends in 13 days. I'm ready to buy</p>
           <p class="flex gap-1 items-center"><img src="./dashboard assets/Regular.svg" alt=""> Book a demo with us</p>
@@ -200,10 +204,16 @@ box-shadow: 0px 1px 2px 0px #0000000F;
     </div>
   </main>
 
-  
-  <aside class="fixed inset-y-0 right-0 bg-white shadow-md max-h-screen w-[280px] top-14">
-    <div class="flex flex-col justify-between h-full ">
-      <div class="flex-grow">
+<div>
+  <aside class="bg-white shadow-md h-screen w-[280px] relative  overflow-hidden">
+    <div class="icons  flex bg-white  items-center justify-end pt-[14px] m-auto w-full h-[56px] border-b">
+      <img src="./dashboard assets/notification-icon.svg" alt="">
+      <img src="./dashboard assets/notification-icon (1).svg" alt="" class="pl-5">
+      <img src="./dashboard assets/profile-icon.svg" alt="" class="px-5 border-l border-[#E3E4E8] ml-5">
+
+    </div>
+    <div class=" flex flex-col justify-between h-full ">
+      <div class="shadow-md flex-grow">
       
         <div class="p-4 ">
           <div class="flex justify-between ">
@@ -251,5 +261,7 @@ box-shadow: 0px 1px 2px 0px #0000000F;
       </div>
     </div>
   </aside>
+</div>
+</div>
 </body>
 </html>

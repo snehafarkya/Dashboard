@@ -20,7 +20,7 @@
     height: .5rem;
 }
 body{
-  background-color: white;
+  background-color: #F8F9FC;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -34,6 +34,16 @@ body{
 box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
 border-radius: 8px;
 box-shadow: 0px 1px 2px 0px #0000000F;
+
+
+}
+.main{
+  border-width: 0px 0px 1px 1px;
+border-style: solid;
+border-color: #EBEDF0
+}
+.card{
+  box-shadow: 0px 1px 2px 0px #0000000F;
 
 }
   </style>
@@ -52,16 +62,16 @@ box-shadow: 0px 1px 2px 0px #0000000F;
   </header> -->
   <div class="flex justify-around ">
     <div>
-  <aside class=" inset-y-0 left-0 bg-white shadow-md h-screen w-[280px]">
+  <aside class="inset-y-0 left-0 bg-white h-screen w-[280px]">
     <div class="flex flex-col justify-between h-full">
       <div class="flex-grow">
-        <div class="px-4 py-3 h-[56px] text-center border-b">
-          <h1 class="text-xl font-bold leading-none flex justify-around items-center gap-2"><img src="./dashboard assets/Rectangle 3 (1).svg" alt=""><span class="text-sm text-left">Mothi Venkatesh<a href="" class="text-xs  text-[#1A54F2] block font-normal">goschedule.io/mothivenkatesh</span> <img src="./dashboard assets/Open.svg" class="ml-4 mt-1" alt=""></h1>
+        <div class="px-4 py-3 h-[56px] text-center  border-[#EBEDF0] border-b">
+          <h1 class="text-xl font-semibold leading-none flex justify-around items-center gap-2"><img src="./dashboard assets/Rectangle 3 (1).svg" alt=""><span class="text-sm text-left">Mothi Venkatesh<a href="" class="text-xs  text-[#1A54F2] block font-normal">goschedule.io/mothivenkatesh</span> <img src="./dashboard assets/Open.svg" class="ml-4 mt-1" alt=""></h1>
         </div>
         <div class="p-4">
           <ul class="space-y-1">
             <li>
-              <a href="javascript:void(0)" class="flex items-center bg-[#F0F6FF] rounded-md font-bold text-sm text-[#1A54F2] h-10 py-2 px-2">
+              <a href="javascript:void(0)" class="flex items-center bg-[#F0F6FF] rounded-md font-semibold text-sm text-[#1A54F2] h-10 py-2 px-2">
                <img src="./dashboard assets/Home.svg" class="mr-4" alt=""> Home
               </a>
             </li>
@@ -107,8 +117,8 @@ box-shadow: 0px 1px 2px 0px #0000000F;
     </div>
   </aside>
 </div>
-  <main class=" max-h-screen overflow-hidden">
-    <div class="font-bold text-xl pl-4 bg-white  items-center pt-[14px] m-auto w-full h-[56px] border-b">Home</div>
+  <main class="main max-h-screen overflow-hidden">
+    <div class="font-semibold text-xl pl-4 bg-white  items-center pt-[14px] m-auto w-full h-[56px] border-b">Home</div>
     <div class=" px-10 py-4 ">
       <div class="max-w-4xl items-center mx-auto">
         <div class="flex justify-between border-[#FDE7AA] border-[1px] rounded-[8px] h-10 gap-60 text-xs bg-[#FFF8E6] px-4 py-3 w-4xl">
@@ -118,9 +128,9 @@ box-shadow: 0px 1px 2px 0px #0000000F;
 
         <div class="info flex justify-between items-start bg-white mt-3 px-4">
           <div class="flex items-center  py-4">
-            <img src="" class="rounded-full h-16 px-4 py-4 w-16 bg-[#F7F7F8]" alt="">
+            <img src="./dashboard assets/Rectangle 3 (1).svg" class="rounded-full h-16  w-16 bg-[#F7F7F8]" alt="">
             <div class="block pl-4">
-            <p class="text-base font-bold text-[#1A1A1A]">Hi, Mothi Venkatesh</p>
+            <p class="text-base font-semibold text-[#1A1A1A]">Hi, Mothi Venkatesh</p>
             <a class="inline-block text-[#1A54F2] text-sm text-medium" href=""> goschedule.io/mothivenkatesh </a>
           </div>
           </div>
@@ -136,7 +146,7 @@ box-shadow: 0px 1px 2px 0px #0000000F;
             <div class="image rounded-[8px]  bg-[#F7F7F8]  "></div>
             <img src="./dashboard assets/Layer.svg" class="h-10 p-2 rounded-[8px]  w-10 bg-[#F7F7F8]" alt="">
             <div class="block pl-4">
-            <p class="text-base font-bold text-[#1A1A1A]">Services</p>
+            <p class="text-base font-semibold text-[#1A1A1A]">Services</p>
             <p class="inline-block text-[#51595D;] text-sm text-medium">2 total</p>
           </div>
           </div>
@@ -154,12 +164,12 @@ box-shadow: 0px 1px 2px 0px #0000000F;
         <!-- cards -->
         <div class="flex mb-4 gap-7 bg-white" >
           <!-- card1 -->
-          <div class="card h-[200x] pt-5 px-4 w-[415px] border-[#E3E4E8] border rounded-[6px] border-2">
+          <div class="card h-[200x] pt-5 px-4 w-[415px] border-[#E3E4E8] border rounded-[6px] border-1">
             <div class="flex justify-between items-center">
             <div class="card-header flex items-center  ">
               <img src="./dashboard assets/Group 5681.svg" class="rounded-[8px] h-8  w-8 bg-[#F7F7F8]" alt="">
               <div class="block pl-4">
-            <p class="text-base font-bold text-[#1A1A1A]">Gym demo session</p>
+            <p class="text-base font-semibold text-[#1A1A1A]">Gym demo session</p>
             <p class="inline-block text-[#51595D;] text-sm text-medium">30 mins, One-on-One</p>
           </div>
         </div>
@@ -169,14 +179,14 @@ box-shadow: 0px 1px 2px 0px #0000000F;
 
             </div>
             <hr width="100%">
-            <div class="card-footer flex justify-between py-4">
-            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./Copy.svg" alt=""><span >Copy</span></button>
-            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/share.svg" alt="" ><span >Share</span></button>
+            <div class="card-footer flex justify-between py-5">
+            <button class="px-4 py-1.5 font-medium  h-8 text-[#1A54F2] bg-[#FFFFFF] flex gap-1.5 items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/copyy.svg" alt=""><span >Copy</span></button>
+            <button class="px-4 py-1.5 font-medium h-8 text-[#1A54F2] bg-[#FFFFFF] flex gap-1.5 items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/shareBlue.svg" alt="" ><span >Share</span></button>
 
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card h-[200x] pt-5 px-4 w-[415px] border-[#E3E4E8] border rounded-[6px] border-2">
+          <div class="card h-[200x] pt-5 px-4 w-[415px] border-[#E3E4E8] border rounded-[6px] border-1">
             <div class="flex justify-between items-center">
             <div class="card-header flex items-center  ">
               <img src="./dashboard assets/Group 5681.svg" class="rounded-[8px] h-8  w-8 bg-[#F7F7F8]" alt="">
@@ -191,9 +201,9 @@ box-shadow: 0px 1px 2px 0px #0000000F;
 
             </div>
             <hr width="100%">
-            <div class="card-footer flex justify-between py-4">
-            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./Copy.svg" alt=""><span >Copy</span></button>
-            <button class="px-4 py-1.5 text-[#1A54F2] bg-[#FFFFFF] flex items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/share.svg" alt=""><span >Share</span></button>
+            <div class="card-footer flex justify-between py-5">
+            <button class="px-4 py-1.5 h-8 text-[#1A54F2] bg-[#FFFFFF] flex gap-1.5 items-center border-[#E3E4E8] border rounded-[6px] font-medium "> <img src="./dashboard assets/copyy.svg" alt=""><span >Copy</span></button>
+            <button class="px-4 py-1.5 font-medium h-8 text-[#1A54F2] bg-[#FFFFFF] flex gap-1.5 items-center border-[#E3E4E8] border rounded-[6px] "> <img src="./dashboard assets/shareBlue.svg" alt=""><span >Share</span></button>
 
             </div>
           </div>
@@ -205,7 +215,7 @@ box-shadow: 0px 1px 2px 0px #0000000F;
   </main>
 
 <div>
-  <aside class="bg-white shadow-md h-screen w-[280px] relative  overflow-hidden">
+  <aside class="bg-white border-l border-[#EBEDF0] h-screen w-[280px] relative  overflow-hidden">
     <div class="icons  flex bg-white  items-center justify-end pt-[14px] m-auto w-full h-[56px] border-b">
       <img src="./dashboard assets/notification-icon.svg" alt="">
       <img src="./dashboard assets/notification-icon (1).svg" alt="" class="pl-5">
@@ -220,7 +230,7 @@ box-shadow: 0px 1px 2px 0px #0000000F;
           Profile Completion 
           <img src="./dashboard assets/Dismiss.svg" alt="">
         </div>
-        <h3 class="font-bold block text-xl">75%</h3>
+        <h3 class="font-semibold block text-xl">75%</h3>
         <div class="w-full mt-2 bg-[#F7F7F8] rounded-full h-1 mb-4 dark:bg-[#C5D9FB]">
           <div class="bg-blue-600 h-1 rounded-full dark:bg-blue-500" style="width: 75%"></div>
         </div>
